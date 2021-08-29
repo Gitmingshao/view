@@ -2,6 +2,7 @@ package com.wjm.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.demo.library.MySharedPreferences
 import com.wjm.view.DiyView
 
 class MainActivity : AppCompatActivity() {
