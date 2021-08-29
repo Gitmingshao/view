@@ -8,6 +8,21 @@ plugins {
 
 android {
     compileSdk 31
+
+    afterEvaluate {
+        publishing {
+            publications {
+                release(MavenPublication) {
+                    from components.release
+                    groupId = 'com.zj.banner'
+                    artifactId = 'banner'
+                    version = '1.0.0'
+                }
+            }
+        }
+    }
+
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
